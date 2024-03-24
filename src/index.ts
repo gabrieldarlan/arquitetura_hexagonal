@@ -1,3 +1,10 @@
-import menuPrincipal from './app/menu/menuPrincipal';
+import dotenv from "dotenv"
 
-menuPrincipal();
+dotenv.config({
+    path: ".env",
+    encoding: "latin1",
+    debug: true,
+})
+// require("dotenv").config()
+import menuPrincipal from "./app/menu/menuPrincipal"
+menuPrincipal()
